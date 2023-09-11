@@ -9,15 +9,15 @@ This case study is important to help and improvise the building structure and it
 A sample images of concrete were classified into two classes positive (with cracks) and negative (without cracks).
 
 ## 2. Data Preprocessing
-3 steps were included in this stage:
-2.1 The dataset were splitted into train, validation, test sets with the ratio of 3:1:1.
-2.2 The dataset were loaded into PrefetchDataset for faster processing time
-2.3 Data augmentation model were added as a layer fro image classification model. (include Random flip and random rotation of images)
+1. 3 steps were included in this stage:
+- The dataset were splitted into train, validation, test sets with the ratio of 3:1:1.
+- The dataset were loaded into PrefetchDataset for faster processing time
+- Data augmentation model were added as a layer fro image classification model. (include Random flip and random rotation of images)
 
 ## 3. Model Development
 The model architecture were used as a guideline to build this machine learning models
-3.1 MobileNetV2 model is used for image processing and features extraction
-3.2 Data Augmentation are set as optional, so there will be two models as comparison for performance
-3.3 Softmax Activation Function was used/act as Activation Function
-3.4 Categorical Cross-Entropy Function (loss function)
-3.5 Only 5 epochs of training (no early stopping)
+1. MobileNetV2 model is used for image processing and features extraction
+- Data Augmentation are set as optional, so there will be two models as comparison for performance
+- Softmax Activation Function was used/act as Activation Function
+- Categorical Cross-Entropy Function (loss function)
+- Only 5 epochs of training (no early stopping)
